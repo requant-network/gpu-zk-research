@@ -4,7 +4,11 @@ Reproducible research into finite-field arithmetic and GPU proving pipelines.
 
 A research project by [Requant Network](https://requant.network).
 
-**Stage 1: GPU experiments executed, independently checked, and replicated on RTX 5060 Ti.**
+**Research campaign completed: CPU references, two-seed GPU experiments and final conclusions published.**
+
+Completed Stage 2: exact GF(2^128) CLMAD arithmetic, native CPU and fused GPU suffixes, complete device-resident transcript graphs, and input-inclusive timing. The million-entry resident transcript takes about 0.538 ms; canonical host binding/uploads raise the measured path to about 21.91 ms. This is an algebraic public-input prover, not a complete ZK system.
+
+Read the [final research report](FINAL_REPORT.md) and [complete Stage-2 median/p95 table](results/stage2-summary.csv). The Stage-1 report below is retained as the preliminary campaign.
 
 Read the [GPU research report and conclusions](GPU_REPORT.md) for measured findings, negative results and the next research decisions.
 
@@ -12,7 +16,7 @@ Read the [GPU research report and conclusions](GPU_REPORT.md) for measured findi
 
 Can a memory-efficient sumcheck folding pipeline reduce complete proof-generation cost while preserving every algebraic check?
 
-## Current experiment scope
+## Stage-1 experiment scope
 
 The first experiment implements a degree-two dot-product sumcheck over the BabyBear prime 2013265921. It binds the transcript to the public inputs with SHA-256, checks every round identity, and recomputes the final multilinear evaluation from the public inputs. Verification is linear in the input size. This is an algebraic research baseline, not a zero-knowledge or succinct proof system. Modulo reduction of SHA-256 challenges is a deterministic prototype choice, not a formal Fiat-Shamir security claim.
 
@@ -89,3 +93,8 @@ Original experiment code is MIT licensed. References retain their own licenses. 
 - [ZKProphet](https://arxiv.org/abs/2509.22684)
 - [FlashProve research prototype](https://github.com/anthropics/FlashProve)
 - [Succinct prover documentation](https://docs.succinct.xyz/docs/provers/introduction)
+
+## Related Requant Network research
+
+- [gpu-fhe-research](https://github.com/requant-network/gpu-fhe-research)
+- [gpu-pouw-research](https://github.com/requant-network/gpu-pouw-research)

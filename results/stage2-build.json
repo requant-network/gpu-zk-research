@@ -1,0 +1,65 @@
+{
+  "utc": "2026-11-08T22:37:51.261788+00:00",
+  "source_sha256": {
+    "collect_binary_build.py": "edcb50efc7e7e23bc79d29156447cbb78650b78fc0d294f4d1e720546cdb38e6"
+  },
+  "builds": {
+    "binary_fields": {
+      "compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-arch=sm_120",
+        "-cubin"
+      ],
+      "source_sha256": {
+        "cuda/binary_fields.cu": "bb95f80466b686b9ec86beb1a1e770ff8841b4c08f45157320efab622067b434"
+      },
+      "binary_sha256": "7ee78b2356909743ee683b660a2fc42cf0df97f407f7822acf4a24a65258e0cf"
+    },
+    "binary_fused": {
+      "compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-arch=sm_120",
+        "-cubin"
+      ],
+      "source_sha256": {
+        "cuda/binary_fields.cu": "bb95f80466b686b9ec86beb1a1e770ff8841b4c08f45157320efab622067b434",
+        "cuda/binary_fused.cu": "54b30fdca75a14bf0872b1b6c056bcce46b47ee23d09bee34993cc5c238f0ec5"
+      },
+      "binary_sha256": "71b7378ebb6dd9ea736c5c827af478868c9ae5cae61cb90ea61556c2a4d32c6a"
+    },
+    "binary_graph": {
+      "compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-arch=sm_120",
+        "-cubin"
+      ],
+      "source_sha256": {
+        "cuda/binary_fields.cu": "bb95f80466b686b9ec86beb1a1e770ff8841b4c08f45157320efab622067b434",
+        "cuda/binary_fused.cu": "54b30fdca75a14bf0872b1b6c056bcce46b47ee23d09bee34993cc5c238f0ec5",
+        "cuda/binary_graph.cu": "2c74a208cbcedbb725fd8d18f2d1e0a3d829cd11f82f2e832b915571d66858a4"
+      },
+      "binary_sha256": "c28a3b4f76911e7a12327cda2bb65b5e2620ce727e737c16b307638384d1867c"
+    },
+    "native_tail": {
+      "compiler": "g++ 13.3.0",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-shared",
+        "-fPIC",
+        "-mpclmul",
+        "-msse2"
+      ],
+      "source_sha256": {
+        "native/binary_tail.cpp": "767ffb911789063fd7a9bd66f6417a6d91ba5b9a89833ce604cac5797091fa9a"
+      },
+      "binary_sha256": "7d3b40bbad7587ed22a08d0d1baf5d36a67af3460b5ebcb9b2cffbd779ec6347"
+    }
+  }
+}

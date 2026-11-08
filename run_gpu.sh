@@ -8,4 +8,4 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 export OPENBLAS_NUM_THREADS="${OPENBLAS_NUM_THREADS:-4}"
 mkdir -p build results
-"$PYTHON" gpu_study.py "$@"
+"$PYTHON" "${STUDY:-gpu_study.py}" "$@"

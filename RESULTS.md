@@ -1,5 +1,9 @@
 # Research results
 
+**Completed campaign:** Completed Stage 2: exact GF(2^128) CLMAD arithmetic, native CPU and fused GPU suffixes, complete device-resident transcript graphs, and input-inclusive timing. The million-entry resident transcript takes about 0.538 ms; canonical host binding/uploads raise the measured path to about 21.91 ms. This is an algebraic public-input prover, not a complete ZK system.
+
+The [final report](FINAL_REPORT.md) supersedes the preliminary scope and next-step list below. It contains the completed experiments, reproducible commands, negative outcomes and remaining work beyond this campaign. Historical Stage-1 details follow.
+
 Research date: 2026-11-09, Asia/Yekaterinburg. Machine-readable records use UTC.
 
 ## CPU correctness
