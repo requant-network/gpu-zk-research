@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "n": 2,
+      "pattern": "zero",
+      "prover_seconds": 3.241200465708971e-05,
+      "rounds": 1,
+      "verified": true
+    },
+    {
+      "n": 2,
+      "pattern": "max",
+      "prover_seconds": 9.819050319492817e-06,
+      "rounds": 1,
+      "verified": true
+    },
+    {
+      "n": 2,
+      "pattern": "random",
+      "prover_seconds": 7.875030860304832e-06,
+      "rounds": 1,
+      "verified": true
+    },
+    {
+      "n": 16,
+      "pattern": "zero",
+      "prover_seconds": 3.0728988349437714e-05,
+      "rounds": 4,
+      "verified": true
+    },
+    {
+      "n": 16,
+      "pattern": "max",
+      "prover_seconds": 2.8073962312191725e-05,
+      "rounds": 4,
+      "verified": true
+    },
+    {
+      "n": 16,
+      "pattern": "random",
+      "prover_seconds": 2.8064008802175522e-05,
+      "rounds": 4,
+      "verified": true
+    },
+    {
+      "n": 256,
+      "pattern": "zero",
+      "prover_seconds": 0.000148905033711344,
+      "rounds": 8,
+      "verified": true
+    },
+    {
+      "n": 256,
+      "pattern": "max",
+      "prover_seconds": 0.00018689699936658144,
+      "rounds": 8,
+      "verified": true
+    },
+    {
+      "n": 256,
+      "pattern": "random",
+      "prover_seconds": 0.00021009199554100633,
+      "rounds": 8,
+      "verified": true
+    },
+    {
+      "n": 4096,
+      "pattern": "zero",
+      "prover_seconds": 0.0017467220313847065,
+      "rounds": 12,
+      "verified": true
+    },
+    {
+      "n": 4096,
+      "pattern": "max",
+      "prover_seconds": 0.002270815020892769,
+      "rounds": 12,
+      "verified": true
+    },
+    {
+      "n": 4096,
+      "pattern": "random",
+      "prover_seconds": 0.002873216988518834,
+      "rounds": 12,
+      "verified": true
+    },
+    {
+      "n": 16384,
+      "pattern": "zero",
+      "prover_seconds": 0.007026303966995329,
+      "rounds": 14,
+      "verified": true
+    },
+    {
+      "n": 16384,
+      "pattern": "max",
+      "prover_seconds": 0.009372662985697389,
+      "rounds": 14,
+      "verified": true
+    },
+    {
+      "n": 16384,
+      "pattern": "random",
+      "prover_seconds": 0.011249896022491157,
+      "rounds": 14,
+      "verified": true
+    }
+  ],
+  "honest_proofs_verified": 15,
+  "tampered_cases_rejected": 45,
+  "scope": "Public-input algebraic baseline. Final MLE is recomputed; no hiding or succinct commitment.",
+  "environment": {
+    "python": "3.12.3",
+    "os": "Linux",
+    "architecture": "x86_64",
+    "processor": "x86_64"
+  },
+  "generated_at_utc": "2026-11-08T20:42:58.556271+00:00",
+  "source_sha256": {
+    "run.py": "451654a4af5ace2bd487ec30b7358971727503f0a33b3bac8df414e19f623a7c",
+    "experiments/sumcheck.py": "da71c390fd6891f2b3198bf60421474fa69a3a522dbf935e3c5b72c479caf4b8",
+    "cuda/probe.cu": "7e887ef14f391fb479bc1cdf842bd8cabf6e32970a6c09bf130204a1ab187383"
+  }
+}
