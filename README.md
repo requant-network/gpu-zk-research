@@ -2,6 +2,8 @@
 
 Reproducible research into finite-field arithmetic and GPU proving pipelines.
 
+A research project by [Requant Network](https://requant.network).
+
 **Stage 0 вЂ” CPU arithmetic baseline and CUDA diagnostic preparation.**
 
 ## Research question
