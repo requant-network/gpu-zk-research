@@ -4,7 +4,9 @@ Reproducible research into finite-field arithmetic and GPU proving pipelines.
 
 A research project by [Requant Network](https://requant.network).
 
-**Stage 0 вЂ” CPU arithmetic baseline and CUDA diagnostic preparation.**
+**Stage 1: GPU experiments executed, independently checked, and replicated on RTX 5060 Ti.**
+
+Read the [GPU research report and conclusions](GPU_REPORT.md) for measured findings, negative results and the next research decisions.
 
 ## Research question
 
@@ -18,7 +20,7 @@ The first experiment implements a degree-two dot-product sumcheck over the BabyB
 
 python run.py validates 15 honest proofs and rejects 45 altered coefficients, wrong claims, and truncated transcripts. Input sizes are 2, 16, 256, 4096, and 16384. Patterns include zero, maximum canonical field elements, and seeded random values.
 
-The CUDA diagnostic checks one multilinear fold against 4096 exact Python field computations. It does not yet generate a complete sumcheck proof on GPU.
+The CUDA diagnostic checks one multilinear fold against 4096 exact Python field computations. The extended study generates all sumcheck rounds on GPU with CPU transcript challenges; see [GPU report](GPU_REPORT.md).
 
 ## Reproduce the CPU experiment
 
@@ -46,6 +48,30 @@ CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=0 ./build/gpu-check results/gp
 ```
 
 The diagnostic uploads the fixture, warms up ten launches, times 100 launches using CUDA events, and compares every result with the exact fixture. Its timing covers the diagnostic kernel only. CPU preparation and transfers are outside that timer.
+
+## Reproduce the GPU study
+
+Tested on Linux x86_64, Python 3.12, RTX 5060 Ti 16 GB (SM 120), CUDA compiler 12.8.61, NVRTC 12.8, CUDA runtime API 12.9 (12090) and cuBLAS package 12.8.4.1. Install dependencies in a separate environment. CUDA 12.8 toolkit headers must be available; this study uses pinned CUDA 12.x wheels even when a newer toolkit is installed system-wide.
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements-gpu.txt
+export CUDA_PATH=/path/to/cuda-12.8
+export CUDA_VISIBLE_DEVICES=0
+bash run_gpu.sh
+bash run_gpu.sh --seed 20261110 --output results/gpu-replication.json
+```
+
+Run without `-O`: assertions are mandatory correctness gates. Each case uses five warm-ups and thirty measured repetitions per variant, with alternating variant order. Two independent input seeds are retained. JIT compilation and plan construction are outside the timers. Read the report for the exact inclusion and exclusion rules of each timing column.
+
+- [GPU research report and conclusions](GPU_REPORT.md)
+- [Primary raw GPU campaign](results/gpu-study.json)
+- [Independent-seed replication](results/gpu-replication.json)
+- [Hardware and software record](results/gpu-environment.json)
+- [Derived latency table, median and p95](results/gpu-summary.csv)
+
+Rebuild the latency table and verify the recorded source hashes with `python summarize_results.py` (standard library only).
 
 ## Research record
 

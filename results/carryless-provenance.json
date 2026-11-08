@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-08T21:12:49.404098+00:00",
+  "source_sha256": {
+    "cuda/carryless.cu": "7176428e456fef8c0de296d5d549f67a7c05f7ccdfd9ffd9146c80f167d6ae15"
+  },
+  "compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Jun_09_02:43:40_PM_PDT_2026\nCuda compilation tools, release 13.3, V13.3.73\nBuild cuda_13.3.r13.3/compiler.38244171_0\n",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-arch=sm_120"
+  ],
+  "warmups": 5,
+  "samples": 30,
+  "scope": "CUDA events per kernel; complete output copied and checked against an independent host 128-bit polynomial oracle after every launch, outside timing."
+}
