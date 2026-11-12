@@ -1,0 +1,24 @@
+{
+  "revision": "293cd240f0f73b37fa03f3082d616dc81d8cb3e5",
+  "builds": {
+    "ctmul32": {
+      "generated_source_sha256": "fe509ad7ff56c3dc20e980d29cee3aa9ef2dc4bccd2a4d167eab1b55efd7d899",
+      "binary_sha256": "72dbbd7e14d6e7c3e6d1fd58cd010e7e1b7aec97372c72af30af55393a12f50c"
+    },
+    "ctmul64": {
+      "generated_source_sha256": "0c571f002a4c91eb47a206c167bfc3646f32851dc1bdc44413768a8822ce232e",
+      "binary_sha256": "c15c089254fd9a4438ee775288ec996f111b7fd039655e617d5abd2f1416e8d1"
+    }
+  },
+  "source_sha256": {
+    "build_optimized_graph.py": "5332b08d86d0612145a402c015b4e4fc18e9573643f8dfb1a80ce19b2ccbe4e9",
+    "build_optimized.py": "fa3404c20b92ec1021e985bc0057eb7b4323033e33d6ade23d17f7005542fcf7",
+    "cuda/binary_fields.cu": "bb95f80466b686b9ec86beb1a1e770ff8841b4c08f45157320efab622067b434",
+    "cuda/binary_fused.cu": "54b30fdca75a14bf0872b1b6c056bcce46b47ee23d09bee34993cc5c238f0ec5",
+    "cuda/binary_graph.cu": "2c74a208cbcedbb725fd8d18f2d1e0a3d829cd11f82f2e832b915571d66858a4"
+  },
+  "result_sha256": {
+    "optimized-build.json": "792eef4d218e3af44df153ce2cac74219d4ba4c242e16eb4e78e48da05b1c9eb"
+  },
+  "scope": "Only arithmetic backend changes. Same exact field/basis, coefficient/fold kernels, device SHA256 and captured transcript graph. Generated variants always retain polynomial reduction."
+}

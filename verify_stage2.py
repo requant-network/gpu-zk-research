@@ -14,7 +14,7 @@ rows=[]
 for path in sorted(files):
     record=json.loads(path.read_text())
     for build in record.get('builds',{}).values():
-        for name,expected in build['source_sha256'].items():
+        for name,expected in build.get('source_sha256',{}).items():
             assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==expected,(path,name)
     for name,expected in record.get('source_sha256',{}).items():
         assert not Path(name).is_absolute() and ':' not in name

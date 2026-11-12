@@ -141,3 +141,7 @@ Repeat the last five studies with `--seed 20261112 --output results/<study-name>
 ## Conclusion and remaining research
 
 The completed campaign supports device-resident transcript scheduling for this sumcheck and rejects a universal suffix cutoff. The next distinct study would integrate these choices into a pinned binary-field proof system with a genuine application verifier, hiding/commitment costs and input-binding pipeline. An optimized bitsliced baseline, larger composition polynomials, multi-GPU behavior and measured energy remain open. No claim of research novelty, production security or mining rewards follows from this campaign.
+
+## Follow-up closure, 12 November 2026
+
+The [follow-up report](FOLLOWUP_REPORT.md) resolves the concrete next steps with new evidence and updated conclusions. Its findings supersede the open-work wording in this historical campaign.

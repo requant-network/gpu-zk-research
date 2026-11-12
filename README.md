@@ -98,3 +98,7 @@ Original experiment code is MIT licensed. References retain their own licenses. 
 
 - [gpu-fhe-research](https://github.com/requant-network/gpu-fhe-research)
 - [gpu-pouw-research](https://github.com/requant-network/gpu-pouw-research)
+
+## Follow-up closure, 12 November 2026
+
+The [follow-up report](FOLLOWUP_REPORT.md) records the disposition of the concrete next steps: new experiments, negative findings and measured resource limits. The earlier completed campaign remains available for historical comparison. Run `python verify_followups.py` for the added evidence checks.

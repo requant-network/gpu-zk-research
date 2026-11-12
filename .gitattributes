@@ -7,3 +7,11 @@
 *.csv text eol=lf
 *.yml text eol=lf
 *.cpp text eol=lf
+
+# Preserve the exact executed Stage-1 bytes bound by retained SHA256 records.
+/run.py -text !eol whitespace=cr-at-eol
+/cuda/probe.cu -text !eol whitespace=cr-at-eol
+
+# Preserve oracle-file bytes bound by both executed benchmark cohorts.
+/results/optimized-oracle-20261112.json -text !eol whitespace=cr-at-eol
+/results/optimized-oracle-20261212.json -text !eol whitespace=cr-at-eol

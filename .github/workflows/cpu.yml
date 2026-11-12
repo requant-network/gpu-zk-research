@@ -15,4 +15,5 @@ jobs:
       - run: python summarize_results.py
       - run: python experiments/binary_field.py
       - run: python verify_stage2.py
-      - run: git diff --exit-code -- results/gpu-summary.csv results/stage2-summary.csv
+      - run: python verify_followups.py
+      - run: git diff --exit-code -- results/followup-summary.csv results/gpu-summary.csv results/stage2-summary.csv

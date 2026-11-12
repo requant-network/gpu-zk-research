@@ -1,0 +1,19 @@
+{
+  "revision": "293cd240f0f73b37fa03f3082d616dc81d8cb3e5",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-arch=sm_120",
+    "-cubin"
+  ],
+  "source_sha256": {
+    "build_optimized.py": "fa3404c20b92ec1021e985bc0057eb7b4323033e33d6ade23d17f7005542fcf7",
+    "cuda/binary_fields.cu": "bb95f80466b686b9ec86beb1a1e770ff8841b4c08f45157320efab622067b434"
+  },
+  "upstream_source_sha256": {
+    "src/ulvt/finite_fields/ghash_ctmul32.cuh": "c9ed699add67fea296c6e943ada0a086fc6ac6ffde770f379c8735461630841e",
+    "src/ulvt/finite_fields/ghash_ctmul64.cuh": "2be14fbd8978815352e534e103c07170a4b4c7f8a1100ec49db12eabfeaa15e7"
+  },
+  "generated_source_sha256": "9b02a81d3826a6381e56ea9525412aa1a52ae3d0e804337dac53fb8a47e8f60d",
+  "cubin_sha256": "946e0626726149844beb20fb8058911c6ab063c86cacaffd0f36a6cf3283adfc"
+}

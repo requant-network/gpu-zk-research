@@ -22,3 +22,7 @@ The matching replication records and complete median/p95 data are indexed in [st
 ## Work beyond this campaign
 
 The completed campaign supports device-resident transcript scheduling for this sumcheck and rejects a universal suffix cutoff. The next distinct study would integrate these choices into a pinned binary-field proof system with a genuine application verifier, hiding/commitment costs and input-binding pipeline. An optimized bitsliced baseline, larger composition polynomials, multi-GPU behavior and measured energy remain open. No claim of research novelty, production security or mining rewards follows from this campaign.
+
+## Follow-up closure, 12 November 2026
+
+The [follow-up report](FOLLOWUP_REPORT.md) records the disposition of the concrete next steps: new experiments, negative findings and measured resource limits. The earlier completed campaign remains available for historical comparison. Run `python verify_followups.py` for the added evidence checks.
